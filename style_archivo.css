@@ -30,6 +30,7 @@ form input[type="text"] {
 
 }
 form input[type="submit"]{
+    display: inline;
     border:none;
     background:#d16f1f;
     color:#FFFFFF;
