@@ -1,0 +1,115 @@
+body{
+    font: 80% ;
+    background: #2c3338;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    padding: 150px 30px 150px 350px ;
+
+}
+
+h1{
+    background-color:#d16f1f;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 9px;
+}
+h2{
+    display: inline;
+    color:#dedede;
+    font-size:2em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Roboto;
+    padding-right: 154px;
+}
+
+h3{
+    display: inline;
+    color:#dedede;
+    font-size:2em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Roboto;
+    padding-right: 15px; 
+}
+h4{
+    display: inline;
+    color:#dedede;
+    font-size:2em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Roboto;
+    padding-right: 5px; 
+    padding-left: 15px;
+}
+h5{
+    display: inline;
+    color:#dedede;
+    font-size:2em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Roboto;
+    padding-left:15px;
+    padding-right: 18px;
+}
+h6{
+    display: inline;
+    color:#dedede;
+    font-size:2em;
+    font-weight: normal;
+    letter-spacing: -1px;
+    font-family: Roboto;
+    padding-right: 14px;
+}
+
+
+form input[type="text"] {
+    padding:0.5em;
+    font-size:15px;
+    color:#4e4e4e;
+    width:200px;
+}
+
+
+form .cedula{
+    display: inline;
+    padding-bottom: 5px;
+}
+form .nombre{
+    display: inline;
+    padding-bottom: 5px;
+}
+form .telefono{
+    display: inline;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+form .direccion{
+    display: inline;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+form .correo{
+    display: inline;
+}
+
+form input[type="button"]{
+    border:none;
+    background:#d16f1f;
+    color:#FFFFFF;
+    font-size:1.6em;
+    padding:10px 15px;
+    opacity: 1;
+    border-radius: 5px;
+}
+form input[type="button"]:hover {
+    background:#d16f1f;
+    opacity: 0.8;
+}
+
+form .botones{
+    display: flow-root;
+    padding-left: 200px;
+    padding-top: 30px;
+}

@@ -11,7 +11,7 @@ h1{
     padding: 9px;
 }
 
-form h2{
+ h2{
     display: inline;
     color:#dedede;
     font-size:2.8em;
@@ -20,22 +20,42 @@ form h2{
     font-family: Roboto;
 }
 
-form input[type="text"] {
-    display: inline;
-    padding:0.8em 0.8em 0.8em 0;
-    font-size:1.4em;
-    color:#4e4e4e;
+form{
+    padding: 150px 50px 250px 350px ;
+}
+
+form input[type="file"] {
+    padding: 10px;
+
+    font-size:1em;
+    color: #FFFFFF;
     width:325px 
     
 
 }
-form input[type="submit"]{
-    display: inline;
+form input[type="button"]{
+    
     border:none;
     background:#d16f1f;
     color:#FFFFFF;
     font-size:1.6em;
-    padding:0.7em 1.2em;
+    padding:10px;
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -webkit-transition: opacity .5s ease-in-out;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+form input[type="submit"]{
+    display:flow-root;
+    border:none;
+    background:#d16f1f;
+    color:#FFFFFF;
+    font-size:1.6em;
+    padding:10px 15px;
     opacity: 1;
     transition: opacity .5s ease-in-out;
     -moz-transition: opacity .5s ease-in-out;
