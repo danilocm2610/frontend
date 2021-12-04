@@ -2,42 +2,43 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser')
 const app = express();
-const bcrypt= require('bcrypt');
-const mongoose=require('mongoose');
+const bcrypt = require('bcrypt');
+const mongoose = require('mongoose');
 const user = require('./public/user.js');
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:false}));
-app.use(express.static(path.join(__dirname,'public')));
-const mongo_uri ='mongodb://localhost:27017/tienda'
-mongoose.connect(mongo_uri,function(err){
-    if(err){
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.static(path.join(__dirname, 'public')));
+const mongo_uri = 'mongodb://localhost:27017/tienda'
+mongoose.connect(mongo_uri, function (err) {
+    if (err) {
         console.log('Inicia Log de errores de Mongo');
-        throw  err;
+        throw err;
         console.log('Finaliza Log de errores de Mongo');
     }
-    else{
+    else {
         console.log('se conectó a ${mongo_uri}');
     }
 });
 
-app.post('/register',(req,res) => { 
-    
-    const {username,password} =req.body;
+app.post('/register', (req, res) => {
+
+    const { username, password } = req.body;
     console.log('Entra a metodo post/register');
-const  User=new user({username,password});
-console.log('Declara variable user');
-    User.save(err =>{
-        if(err){
+    const User = new user({ username, password });
+    console.log('Declara variable user');
+    User.save(err => {
+        if (err) {
             res.status(500).send('Error al registrar usuario');
         }
-        else{
+        else {
             res.status(200).send('Usuario Registrado');
         }
     });
-    
+
 });
-app.post('/authenticate',(req,res) => { 
+app.post('/authenticate', (req, res) => {
     console.log('verificar');
+<<<<<<< HEAD
     const {username,password} =req.body;
     user.findOne({username},(err,user) => {
         if(err){
@@ -55,10 +56,33 @@ app.post('/authenticate',(req,res) => {
                     res.status(500).send('usuario o clave incorrecta');
                 }
             });
+=======
+    const { username, password } = req.body;
+    user.findOne({ username }, (err, user) => {
+        if (username == "admininicial") {
+            if (err) {
+                res.status(500).send('Error al autenticar usuario');
+            } else if (!user) {
+                res.status(500).send('El usuario no existe');
+            } else {
+                user.isCorrectPassword(password, (err, result) => {
+                    if (err) {
+                        res.status(500).send('Error al autenticar');
+                    } else if (result) {
+                        res.status(200).send('Usuario logueado correctamente');
+                    } else {
+                        res.status(500).send('usuario o clave incorrecta');
+                    }
+                });
+            }
+        } else {
+            res.status(500).send('no tiene permisos');
+>>>>>>> eb3710a34df64dd4f34cd9701189d5398d182c4c
         }
+
     });
 });
-app.listen(3000,() => {
-        console.log('Servidor Inicia puerto 3000');
+app.listen(3000, () => {
+    console.log('Servidor Inicia puerto 3000');
 })
-module.exports=app;
+module.exports = app;
