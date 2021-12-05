@@ -38,25 +38,6 @@ app.post('/register', (req, res) => {
 });
 app.post('/authenticate', (req, res) => {
     console.log('verificar');
-<<<<<<< HEAD
-    const {username,password} =req.body;
-    user.findOne({username},(err,user) => {
-        if(err){
-            res.status(500).send('Error al autenticar usuario');
-        }else if(!user){
-            res.status(500).send('El usuario no existe');
-        } else
-        {
-            user.isCorrectPassword(password,(err,result)=>{
-                if(err){
-                    res.status(500).send('Error al autenticar');
-                }else if(result){
-                    res.status(200).send('Usuario Logeado');
-                }else{
-                    res.status(500).send('usuario o clave incorrecta');
-                }
-            });
-=======
     const { username, password } = req.body;
     user.findOne({ username }, (err, user) => {
         if (username == "admininicial") {
@@ -77,7 +58,6 @@ app.post('/authenticate', (req, res) => {
             }
         } else {
             res.status(500).send('no tiene permisos');
->>>>>>> eb3710a34df64dd4f34cd9701189d5398d182c4c
         }
 
     });
