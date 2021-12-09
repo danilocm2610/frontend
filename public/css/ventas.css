@@ -3,6 +3,33 @@ body{
     background: #2c3338;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.menu{
+    width: 200px;
+    display: inline-block;
+    
+
+}
+form{
+    display: inline-block;
+    width: 900px;
+    padding-left: 100px;
+
+}
+.menu .ultimo{
+    padding-top: 70px;
+}
+a{
+    border:none;
+    background:#d16f1f;
+    color:#FFFFFF;
+    font-size:1.3em;
+    padding:8px 13px;
+    opacity: 1;
+    border-radius: 5px;
+    margin-left: 10 px;
+    
+    
+}
 
 h1{
     background-color:#d16f1f;
@@ -79,7 +106,7 @@ form input[type="button"]:hover {
 }
 
 form .arriba{
-    padding:70px 0px 0px 350px;   
+    padding:70px 0px 0px 0px;   
 }
 form .arriba .Inputc{
     width:100px;
@@ -87,7 +114,7 @@ form .arriba .Inputc{
 
 form .medio{
     display: flow-root;
-    padding:40px 0px 0px 350px;
+    padding:40px 0px 0px 0px;
 }
 
 form .medio .cant{
@@ -97,19 +124,23 @@ form .medio .nombre{
     width: 290px;
 }
 form .confirmacion{
-    display: inline;
-    padding: 170px;
+    display: inline-block;
+    width: 315px;
+    padding-left: 180px;
+    padding-bottom: 20px;
+    
 }
 form .totales{
-    display: inline;
-    padding: 0px 0px 40px 75px;
+    display: inline-block;
+    width: 360px;
+    
 }
 form .abajo{
-    padding: 40px 0px 0px 350px;
+    padding: 40px 0px 0px 0px;
 }
 form .totales .totalIVA{
-    padding-left: 554px;
+    padding-left: 50px;
 }
-form .totales .totalconIVA{
-    padding-left: 505px;
+form .totales .totalVenta{
+    padding-left: 32px;
 }

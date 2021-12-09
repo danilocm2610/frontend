@@ -4,8 +4,32 @@ body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 form{
-    padding: 150px 30px 150px 350px ;
+    display: inline-block;
+    width: 900px;
+    padding-left: 100px;
 
+}
+
+.menu{
+    width: 200px;
+    display: inline-block;
+    
+
+}
+.menu .ultimo{
+    padding-top: 70px;
+}
+a{
+    border:none;
+    background:#d16f1f;
+    color:#FFFFFF;
+    font-size:1.3em;
+    padding:8px 13px;
+    opacity: 1;
+    border-radius: 5px;
+    margin-left: 10 px;
+    
+    
 }
 
 h1{
