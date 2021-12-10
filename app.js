@@ -13,6 +13,7 @@ mongoose.connect(mongo_uri, function (err) {
     if (err) {
         console.log('Inicia Log de errores de Mongo');
         throw err;
+        console.log('Finaliza Log de errores de Mongo');
     }
     else {
         console.log('se conectó a ${mongo_uri}');
