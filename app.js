@@ -4,7 +4,10 @@ const bodyParser = require('body-parser')
 const app = express();
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
-const user = require('./public/user.js');
+const user = require('./public/user.js');   
+const http = require('http'),
+url = require('url'),
+fs = require('fs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -50,7 +53,7 @@ app.post('/authenticate', (req, res) => {
                     if (err) {
                         res.status(500).send('Error al autenticar');
                     } else if (result) {
-                        res.status(200).send('Usuario logueado correctamente');
+                        res.status(500).send('autentificacion');
                     } else {
                         res.status(500).send('usuario o clave incorrecta');
                     }
