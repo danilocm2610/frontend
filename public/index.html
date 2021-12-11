@@ -10,15 +10,27 @@
     </head>
 
     <body>
+        <script language= JavaScript>
+            function go(){
+
+                if (document.form.password.value=='admin123456' && document.form.username.value=='admininicial'){ 
+                    document.form.submit(); 
+                }else{ 
+                    alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+
+                } 
+            } 
+        </script>
+
         <h1>Cadena de Tiendas La Genérica - Sucursal Bogotá</h1>
         <div class="login-wrapper">
 
-            <form action="/authenticate" method="POST">
+            <form action="archivo.html" name="form">
                 <h2><span>Acceso al Sistema</span></h2>
         
                 <div class="input-row">
                     <span class="icon"></span>
-                    <input type="text" id="username" name="username"   placeholder="Usuario"/>   
+                    <input type="text" id="username" name="username" placeholder="Usuario"/>   
                 </div>
         
                 <div class="input-row">
@@ -27,7 +39,7 @@
                 </div>
         
                 <div class="submit-row">
-                    <input type="submit" value="Aceptar &raquo;"/>
+                    <input onclick=go() type="submit" value="Aceptar &raquo;"/>
                 </div>
                 <div>
 
