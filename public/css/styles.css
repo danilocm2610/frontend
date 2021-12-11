@@ -59,7 +59,7 @@ form input[type="text"]:focus,form input[type="password"]:focus {
     outline:0;
 }
 
-form input[type="submit"]{
+form input[type="button"]{
     border:none;
     background:#d16f1f;
     color:#FFFFFF;
@@ -74,7 +74,7 @@ form input[type="submit"]{
     border-radius: 2px;
 }
 
-form input[type="submit"]:hover {
+form input[type="button"]:hover {
     background:#d16f1f;
     opacity: 0.8;
 }
