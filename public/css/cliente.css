@@ -2,11 +2,13 @@ body{
     font: 80% ;
     background: #2c3338;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 600;
 }
 form{
     display: inline-block;
     width: 900px;
     padding-left: 100px;
+    padding-bottom: 200px;
 
 }
 
@@ -86,6 +88,10 @@ h6{
     font-family: Roboto;
     padding-right: 14px;
 }
+h7{
+    color:#2c3338;
+    
+}
 
 
 form input[type="text"] {
@@ -136,4 +142,11 @@ form .botones{
     display: flow-root;
     padding-left: 200px;
     padding-top: 30px;
+}
+
+.archivo{
+    display: flow-root;
+    width: 900px;
+    padding-bottom: 100px;
+    
 }

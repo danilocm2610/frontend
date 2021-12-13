@@ -2,6 +2,7 @@ body{
     font: 80% ;
     background: #2c3338;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 600;
 }
 
 h1{
@@ -19,11 +20,15 @@ h1{
     letter-spacing: -1px;
     font-family: Roboto;
 }
+h3{
+    color:#2c3338
+}
 
 form{
     display: inline-block;
     width: 900px;
-    height: 100px;
+    padding-left: 100px;
+    
 
 }
 .menu{
@@ -91,5 +96,12 @@ form input[type="submit"]{
 form input[type="submit"]:hover {
     background:#d16f1f;
     opacity: 0.8;
+}
+
+.archivo{
+    display: flow-root;
+    width: 900px;
+    padding-bottom: 150px;
+    
 }
 
